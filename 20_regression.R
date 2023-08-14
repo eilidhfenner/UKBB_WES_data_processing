@@ -29,12 +29,12 @@ NM_phen=as.list(colnames(phen[,c(5, 61)]))
 names(NM_phen)=c(colnames(phen[,c(5, 61)]))
 
 # Covariates
-covars <- list(AC1 = c("Exome_wide_n_Syn_AC1+assessment_centre+batch+Sex__1_is_Male+Standardised_age+Year_of_birth+Standardised_age_sq+sex_st_age+sex_st_age_squared+PC1+PC2+PC3+PC4+PC5+PC6+PC7+PC8+PC9+PC10"))
-syn_covars<- list(AC1 = c("assessment_centre+batch+Sex__1_is_Male+Standardised_age+Year_of_birth+Standardised_age_sq+sex_st_age+sex_st_age_squared+PC1+PC2+PC3+PC4+PC5+PC6+PC7+PC8+PC9+PC10"))
-FI_covars <- list(AC1 = c("Exome_wide_n_Syn_AC1+assessment_centre+batch+Sex__1_is_Male+Standardised_age+Year_of_birth+Standardised_age_sq+sex_st_age+sex_st_age_squared+PC1+PC2+PC3+PC4+PC5+PC6+PC7+PC8+PC9+PC10+FI_source"))
-syn_FI_covars <- list(AC1 = c("assessment_centre+batch+Sex__1_is_Male+Standardised_age+Year_of_birth+Standardised_age_sq+sex_st_age+sex_st_age_squared+PC1+PC2+PC3+PC4+PC5+PC6+PC7+PC8+PC9+PC10+FI_source"))
-NM_covars <- list(AC1 = c("Exome_wide_n_Syn_AC1+assessment_centre+batch+Sex__1_is_Male+Standardised_age+Year_of_birth+Standardised_age_sq+sex_st_age+sex_st_age_squared+PC1+PC2+PC3+PC4+PC5+PC6+PC7+PC8+PC9+PC10+NM_source"))
-syn_NM_covars <- list(AC1 = c("assessment_centre+batch+Sex__1_is_Male+Standardised_age+Year_of_birth+Standardised_age_sq+sex_st_age+sex_st_age_squared+PC1+PC2+PC3+PC4+PC5+PC6+PC7+PC8+PC9+PC10+NM_source"))
+covars <- list(AC1 = c("Exome_wide_n_Syn_AC1+assessment_centre+batch+Sex__1_is_Male+Standardised_age+Standardised_age_sq+sex_st_age+sex_st_age_squared+PC1+PC2+PC3+PC4+PC5+PC6+PC7+PC8+PC9+PC10"))
+syn_covars<- list(AC1 = c("assessment_centre+batch+Sex__1_is_Male+Standardised_age+Standardised_age_sq+sex_st_age+sex_st_age_squared+PC1+PC2+PC3+PC4+PC5+PC6+PC7+PC8+PC9+PC10"))
+FI_covars <- list(AC1 = c("Exome_wide_n_Syn_AC1+assessment_centre+batch+Sex__1_is_Male+Standardised_age+Standardised_age_sq+sex_st_age+sex_st_age_squared+PC1+PC2+PC3+PC4+PC5+PC6+PC7+PC8+PC9+PC10+FI_source"))
+syn_FI_covars <- list(AC1 = c("assessment_centre+batch+Sex__1_is_Male+Standardised_age+Standardised_age_sq+sex_st_age+sex_st_age_squared+PC1+PC2+PC3+PC4+PC5+PC6+PC7+PC8+PC9+PC10+FI_source"))
+NM_covars <- list(AC1 = c("Exome_wide_n_Syn_AC1+assessment_centre+batch+Sex__1_is_Male+Standardised_age+Standardised_age_sq+sex_st_age+sex_st_age_squared+PC1+PC2+PC3+PC4+PC5+PC6+PC7+PC8+PC9+PC10+NM_source"))
+syn_NM_covars <- list(AC1 = c("assessment_centre+batch+Sex__1_is_Male+Standardised_age+Standardised_age_sq+sex_st_age+sex_st_age_squared+PC1+PC2+PC3+PC4+PC5+PC6+PC7+PC8+PC9+PC10+NM_source"))
 
 # Read in the counts of variants in LoFi genes and select the vars of interest. 
 counts=read.csv('/scratch/c.c1928239/regression_analyses/updated_counts/LoFi_pli_genes_counts.csv')
